@@ -10,7 +10,6 @@ namespace ECommerce.Services.Catalog.Mapper
         {
             CreateMap<Category, CategoryDto>();
             CreateMap<CategoryDto, Category>();
-
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Product, CreateProductDto>().ReverseMap();
             CreateMap<Product, UpdateProductDto>().ReverseMap();

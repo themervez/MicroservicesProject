@@ -20,7 +20,7 @@
     "ECommerce.Services.Catalog": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
-      "launchBrowser": false, //Uygulama ayağa kaldırıldığında tarayıcının her defasında açılmaması için false yapıldı
+      "launchBrowser": false, //Uygulama ayağa kaldırıldığında tarayıcının her defasında açılmaması için false yapıldı;postman ile test edilme süreci boyunca
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5011",
       "environmentVariables": {

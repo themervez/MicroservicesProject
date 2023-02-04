@@ -21,31 +21,58 @@ namespace ECommerce.Services.Catalog.Services.Concrete
             _productCollection = database.GetCollection<Product>(databaseSettings.ProductCollectionName);
 
             _mapper = mapper;
-
         }
-        public Task<ResponseDto<ProductDto>> CreateAsync(ProductDto productDto)
+        public async Task<ResponseDto<ProductDto>> CreateAsync(CreateProductDto createProductDto)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<ResponseDto<NoContent>> DeleteAsync(string id)
-        {
-            throw new System.NotImplementedException();
+            var product = _mapper.Map<Product>(createProductDto);
+            await _productCollection.InsertOneAsync(product);
+            return ResponseDto<ProductDto>.Success(_mapper.Map<ProductDto>(product), 200);
         }
 
-        public Task<ResponseDto<List<ProductDto>>> GetAllAsync()
+        public async Task<ResponseDto<NoContent>> DeleteAsync(string id)
         {
-            throw new System.NotImplementedException();
+            var result = await _productCollection.DeleteOneAsync(x => x.Id == id);
+            if (result.DeletedCount > 0)
+            {
+                return ResponseDto<NoContent>.Success(204);
+            }
+            else
+            {
+                return ResponseDto<NoContent>.Fail("Silinecek ürün bulunamadı!!", 404);
+            }
         }
 
-        public Task<ResponseDto<ProductDto>> GetByIdAsync(string id)
+        public async Task<ResponseDto<List<ProductDto>>> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            var products = await _productCollection.Find(product => true).ToListAsync();
+            return ResponseDto<List<ProductDto>>.Success(_mapper.Map<List<ProductDto>>(products), 200);
         }
 
-        public Task<ResponseDto<NoContent>> UpdateAsync(UpdateProductDto updateProductDto)
+        public async Task<ResponseDto<ProductDto>> GetByIdAsync(string id)
         {
-            throw new System.NotImplementedException();
+            var product = await _productCollection.Find<Product>(x => x.Id == id).FirstOrDefaultAsync();
+            if (product == null)
+            {
+                return ResponseDto<ProductDto>.Fail("Girilen Id'ye ait ürün bulunamadı!!", 404);
+            }
+            else
+            {
+                return ResponseDto<ProductDto>.Success(_mapper.Map<ProductDto>(product), 200);
+            }
+        }
+
+        public async Task<ResponseDto<NoContent>> UpdateAsync(UpdateProductDto updateProductDto)
+        {
+            var updatedProduct = _mapper.Map<Product>(updateProductDto);
+            var result = await _productCollection.FindOneAndReplaceAsync(x => x.Id == updateProductDto.Id, updatedProduct);
+            if (result == null)
+            {
+                return ResponseDto<NoContent>.Fail("Güncellenecek Id değeri bulunamadı!!", 404);
+            }
+            else
+            {
+                return ResponseDto<NoContent>.Success(204);
+            }
         }
     }
 }

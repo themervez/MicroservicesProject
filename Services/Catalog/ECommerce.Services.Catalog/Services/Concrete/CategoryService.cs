@@ -24,17 +24,28 @@ namespace ECommerce.Services.Catalog.Services.Concrete
         }
         public async Task<ResponseDto<CategoryDto>> CreateAsync(CategoryDto categoryDto)
         {
-            throw new System.NotImplementedException();
+            var category = _mapper.Map<Category>(categoryDto);
+            await _categoryCollection.InsertOneAsync(category);
+            return ResponseDto<CategoryDto>.Success(_mapper.Map<CategoryDto>(category), 200);
         }
 
         public async Task<ResponseDto<List<CategoryDto>>> GetAllAsync()
         {
-            throw new System.NotImplementedException();
+            var categories = await _categoryCollection.Find(category => true).ToListAsync();
+            return ResponseDto<List<CategoryDto>>.Success(_mapper.Map<List<CategoryDto>>(categories), 200);
         }
 
         public async Task<ResponseDto<CategoryDto>> GetByIdAsync(string id)
         {
-            throw new System.NotImplementedException();
+            var category = await _categoryCollection.Find<Category>(x => x.Id == id).FirstOrDefaultAsync();
+            if (category == null)
+            {
+                return ResponseDto<CategoryDto>.Fail("Kategori bulunamadı!!", 404);
+            }
+            else
+            {
+                return ResponseDto<CategoryDto>.Success(_mapper.Map<CategoryDto>(category), 200);
+            }
         }
     }
 }

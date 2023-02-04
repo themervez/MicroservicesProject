@@ -9,7 +9,7 @@ namespace ECommerce.Shared.DTOs
     public class ResponseDto<T>
     {
         public T Data { get; set; }//T türünde, API'den gelen response daki json türündeki veriler
-        public int StatusCode { get; set; }//API'de gönderilen isteklerin durum kodları
+        public int StatusCode { get; set; }//API'de gönderilen requestlerin durum kodları
         public bool IsSuccesful { get; set; }//Response başarılı mı
         public List<string> Errors { get; set; }//Hata olması durumunda hataların listelendiği property
         public static ResponseDto<T> Success(T data, int statusCode)
@@ -21,7 +21,6 @@ namespace ECommerce.Shared.DTOs
                 IsSuccesful = true
             };
         }
-
         public static ResponseDto<T> Success(int statusCode)
         {
             return new ResponseDto<T>
@@ -44,7 +43,7 @@ namespace ECommerce.Shared.DTOs
         {
             return new ResponseDto<T>
             {
-                Errors = new List<string>() { error },//
+                Errors = new List<string>() { error },//Tek hata için
                 StatusCode = statusCode,
                 IsSuccesful = false
             };
