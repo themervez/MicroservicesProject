@@ -140,3 +140,5 @@ C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProjec
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\IdentityServer\ECommerce.IdentityServer\obj\Debug\netcoreapp3.1\ECommerce.IdentityServer.dll
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\IdentityServer\ECommerce.IdentityServer\obj\Debug\netcoreapp3.1\ECommerce.IdentityServer.pdb
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\IdentityServer\ECommerce.IdentityServer\obj\Debug\netcoreapp3.1\ECommerce.IdentityServer.genruntimeconfig.cache
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\IdentityServer\ECommerce.IdentityServer\bin\Debug\netcoreapp3.1\ECommerce.Shared.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\IdentityServer\ECommerce.IdentityServer\bin\Debug\netcoreapp3.1\ECommerce.Shared.pdb

@@ -1,6 +1,7 @@
 using ECommerce.Services.Catalog.Services.Abstract;
 using ECommerce.Services.Catalog.Services.Concrete;
 using ECommerce.Services.Catalog.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,12 @@ namespace ECommerce.Services.Catalog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["IdentityServerURL"];//for connection
+                options.Audience = "Resource_Catalog";
+                options.RequireHttpsMetadata = false;
+            });
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddAutoMapper(typeof(Startup));
@@ -58,6 +65,8 @@ namespace ECommerce.Services.Catalog
             }
 
             app.UseRouting();
+
+            app.UseAuthentication();   
 
             app.UseAuthorization();
 
