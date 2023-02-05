@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBtt48e/1BKlQyYw09G65DxrvYcZUHKlrCq9L8QEGeQhri7Vwi/LnjQ0+KvkKYg4YUWzfZCbhyU38KVxtLRczQ==",
+  "dgSpecHash": "TkRRKyBn6A9pF1DrNqIY6R5w2O2ZEeWJqY1oD4vt8Ks3OmlY7ZIZtAAn62MwrjsJjzAtwiO7mWCYirHMTa5Fzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Merve\\Desktop\\AKBANK EĞİTİM SERÜVENİM\\Ders Projeler\\MicroservicesProject\\Services\\Catalog\\ECommerce.Services.Catalog\\ECommerce.Services.Catalog.csproj",
+  "projectFilePath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Catalog\\ECommerce.Services.Catalog\\ECommerce.Services.Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Merve\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Merve\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

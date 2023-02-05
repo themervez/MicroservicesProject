@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Lwp+MdP2MLj0VcJ9BDQ39R4y4NRT3gGFbgL7dwm2BKqfz+gdnnV3CPlM8JHDTFZhlR4sn+wbjVfUD1QhJqXlQ==",
+  "dgSpecHash": "bKfNJ+l7Bsp0Bn8BGiMOmo+QqkQXztUzR7+q/p7x4kmUs3JpBfwYilweka9u06R5STS9g4CKCQrxkqurLaOo1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Merve\\Desktop\\AKBANK EĞİTİM SERÜVENİM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Merve\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Merve\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
