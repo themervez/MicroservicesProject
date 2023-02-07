@@ -68,19 +68,21 @@ namespace ECommerce.IdentityServer
 
                 new Client //Client that after authentication
                 {
-                    ClientId = "interactive",
-                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
+                    ClientId = "mvcclientforuser",
+                    ClientName="aspnetcore",
+                    ClientSecrets = { new Secret("secret".Sha256()) },
 
-                    AllowedGrantTypes = GrantTypes.Code,
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
 
-                    AccessTokenLifetime=900,
+                    AccessTokenLifetime=300,
 
-                    RedirectUris = { "https://localhost:44300/signin-oidc" },
-                    FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                    PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                    //RedirectUris = { "https://localhost:44300/signin-oidc" },
+                    //FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
+                    //PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "scope2" }
+
+                    AllowedScopes = { "Catalog_FullPermission", IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName }
                 },
             };
     }
