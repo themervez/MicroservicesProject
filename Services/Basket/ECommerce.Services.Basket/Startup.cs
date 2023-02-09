@@ -1,10 +1,16 @@
+using ECommerce.Services.Basket.Services;
+using ECommerce.Services.Basket.Settings;
+using ECommerce.Shared.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
@@ -25,11 +31,35 @@ namespace ECommerce.Services.Basket
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["IdentityServerURL"];
+                options.Audience = "Resource_Basket";
+                options.RequireHttpsMetadata = false;
+            });
 
-            services.AddControllers();
+            services.AddControllers(opt =>
+            {
+                opt.Filters.Add(new AuthorizeFilter());
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ECommerce.Services.Basket", Version = "v1" });
+            });
+
+            services.AddHttpContextAccessor();
+            services.AddScoped<ISharedIdentityService, SharedIdentityService>();
+            services.AddScoped<IBasketService, BasketService>();
+
+            services.Configure<RedisSettings>(Configuration.GetSection("RedisSettings"));
+
+            services.AddSingleton<RedisService>(sp =>
+            {
+                var redisSettings = sp.GetRequiredService<IOptions<RedisSettings>>().Value;
+                var redis = new RedisService(redisSettings.Host, redisSettings.Port);
+                redis.Connect();
+                return redis;
             });
         }
 
@@ -44,7 +74,7 @@ namespace ECommerce.Services.Basket
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

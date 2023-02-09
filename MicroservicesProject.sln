@@ -25,31 +25,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.IdentityServer", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{1A973073-A1A2-4D8A-85EB-3B3CD95AE348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services.Basket", "Services\Basket\ECommerce.Services.Basket\ECommerce.Services.Basket.csproj", "{E4A668D7-4851-47FD-B69C-BF842FB02A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.Basket", "Services\Basket\ECommerce.Services.Basket\ECommerce.Services.Basket.csproj", "{E4A668D7-4851-47FD-B69C-BF842FB02A60}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{FCE390ED-EE54-408A-9631-E73A48487382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services.Discount", "Services\Discount\ECommerce.Services.Discount\ECommerce.Services.Discount.csproj", "{5E3D1E17-13FC-47AD-8035-B0C5B1697FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.Discount", "Services\Discount\ECommerce.Services.Discount\ECommerce.Services.Discount.csproj", "{5E3D1E17-13FC-47AD-8035-B0C5B1697FE2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FakePayment", "FakePayment", "{FB413B1D-EDF3-44E0-AA0C-146898E82924}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services.FakePayment", "Services\FakePayment\ECommerce.Services.FakePayment\ECommerce.Services.FakePayment.csproj", "{5B38EC3D-166E-4F8D-B544-40A2D0FC3786}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.FakePayment", "Services\FakePayment\ECommerce.Services.FakePayment\ECommerce.Services.FakePayment.csproj", "{5B38EC3D-166E-4F8D-B544-40A2D0FC3786}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{AE2EBDF5-DFA7-43E6-BC11-CD97EE5A5A6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services.Order.Api", "Services\Order\ECommerce.Services.Order.Api\ECommerce.Services.Order.Api.csproj", "{E5BE7167-438B-4240-A50D-FF70A6E22F25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.Order.Api", "Services\Order\ECommerce.Services.Order.Api\ECommerce.Services.Order.Api.csproj", "{E5BE7167-438B-4240-A50D-FF70A6E22F25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Order.Application", "Services\Order\ECommerce.Order.Application\ECommerce.Order.Application.csproj", "{E536D835-811F-4FD0-A95D-64F70BB7117E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Order.Application", "Services\Order\ECommerce.Order.Application\ECommerce.Order.Application.csproj", "{E536D835-811F-4FD0-A95D-64F70BB7117E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Order.Domain", "Services\Order\ECommerce.Order.Domain\ECommerce.Order.Domain.csproj", "{97F50390-7E96-4201-9381-1B1C95DFD27C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Order.Domain", "Services\Order\ECommerce.Order.Domain\ECommerce.Order.Domain.csproj", "{97F50390-7E96-4201-9381-1B1C95DFD27C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Order.Domain.Core", "Services\Order\ECommerce.Order.Domain.Core\ECommerce.Order.Domain.Core.csproj", "{30370124-4F17-4DB3-8FBA-5F9440A335EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Order.Domain.Core", "Services\Order\ECommerce.Order.Domain.Core\ECommerce.Order.Domain.Core.csproj", "{30370124-4F17-4DB3-8FBA-5F9440A335EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Order.Infrastructure", "Services\Order\ECommerce.Order.Infrastructure\ECommerce.Order.Infrastructure.csproj", "{8906ECDD-18CB-408F-B17A-81F785E78BE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Order.Infrastructure", "Services\Order\ECommerce.Order.Infrastructure\ECommerce.Order.Infrastructure.csproj", "{8906ECDD-18CB-408F-B17A-81F785E78BE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{F1104B91-D832-480D-85E3-B86439968961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Services.PhotoStock", "Services\PhotoStock\ECommerce.Services.PhotoStock\ECommerce.Services.PhotoStock.csproj", "{72560E7D-0F45-4C2E-8EAD-9D4E0DAFD803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.PhotoStock", "Services\PhotoStock\ECommerce.Services.PhotoStock\ECommerce.Services.PhotoStock.csproj", "{72560E7D-0F45-4C2E-8EAD-9D4E0DAFD803}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
