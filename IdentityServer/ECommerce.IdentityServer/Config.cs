@@ -22,7 +22,7 @@ namespace ECommerce.IdentityServer
            {
               new ApiResource("Resource_Catalog")    {Scopes={ "Catalog_FullPermission"}},
               //new ApiResource("Resource_Order")      {Scopes={ "Order_FullPermission" }},
-              //new ApiResource("Resource_Discount")   {Scopes={ "Discount_FullPermission" }},
+              new ApiResource("Resource_Discount")   {Scopes={ "Discount_FullPermission" }},
               new ApiResource("Resource_Basket")     {Scopes={ "Basket_FullPermission" }},
               //new ApiResource("Resource_FakePayment"){Scopes={ "FakePayment_FullPermission" }},
               new ApiResource("Resource_PhotoStock"){Scopes={ "PhotoStock_FullPermission" }},
@@ -34,7 +34,7 @@ namespace ECommerce.IdentityServer
             {
                new ApiScope("Catalog_FullPermission","Catalog API için tam yetkili erişim"),
                //new ApiScope("Order_FullPermission","Order API için tam yetkili erişim"),
-               //new ApiScope("Discount_FullPermission","Discount API için tam yetkili erişim"),
+               new ApiScope("Discount_FullPermission","Discount API için tam yetkili erişim"),
                new ApiScope("Basket_FullPermission","Basket API için tam yetkili erişim"),
                //new ApiScope("FakePayment_FullPermission","FakePayment API için tam yetkili erişim"),
                new ApiScope("PhotoStock_FullPermission","PhotoStock API için tam yetkili erişim"),
@@ -82,7 +82,8 @@ namespace ECommerce.IdentityServer
 
                     AllowOfflineAccess = true,
 
-                    AllowedScopes = { "Catalog_FullPermission", "Basket_FullPermission", IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName }
+                    AllowedScopes = { "Catalog_FullPermission", "Basket_FullPermission", "Discount_FullPermission",
+                        IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName }
                 },
             };
     }
