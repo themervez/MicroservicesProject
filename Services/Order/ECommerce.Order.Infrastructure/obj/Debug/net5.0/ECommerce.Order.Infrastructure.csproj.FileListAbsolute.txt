@@ -10,3 +10,11 @@ C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProjec
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\obj\Debug\net5.0\refint\ECommerce.Order.Infrastructure.dll
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\obj\Debug\net5.0\ECommerce.Order.Infrastructure.pdb
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\obj\Debug\net5.0\ref\ECommerce.Order.Infrastructure.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Infrastructure.runtimeconfig.json
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Infrastructure.runtimeconfig.dev.json
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Domain.Core.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Domain.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Domain.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\bin\Debug\net5.0\ECommerce.Order.Domain.Core.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\obj\Debug\net5.0\ECommerce.Order.Infrastructure.csproj.CopyComplete
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Infrastructure\obj\Debug\net5.0\ECommerce.Order.Infrastructure.genruntimeconfig.cache

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ECommerce.Order.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ECommerce.Order.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ECommerce.Order.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ECommerce.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../ECommerce.Order.Domain.Core/ECommerce.Order.Domain.Core.csproj",
+      "msbuildProject": "../ECommerce.Order.Domain.Core/ECommerce.Order.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ECommerce.Order.Domain.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Merve\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Order\\ECommerce.Order.Domain.Core\\ECommerce.Order.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Order\\ECommerce.Order.Domain.Core\\ECommerce.Order.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -10,3 +10,6 @@ C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProjec
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\obj\Debug\net5.0\refint\ECommerce.Order.Domain.dll
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\obj\Debug\net5.0\ECommerce.Order.Domain.pdb
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\obj\Debug\net5.0\ref\ECommerce.Order.Domain.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\bin\Debug\net5.0\ECommerce.Order.Domain.Core.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\bin\Debug\net5.0\ECommerce.Order.Domain.Core.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Domain\obj\Debug\net5.0\ECommerce.Order.Domain.csproj.CopyComplete

@@ -10,3 +10,12 @@ C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProjec
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\obj\Debug\net5.0\refint\ECommerce.Order.Application.dll
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\obj\Debug\net5.0\ECommerce.Order.Application.pdb
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\obj\Debug\net5.0\ref\ECommerce.Order.Application.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Domain.Core.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Domain.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Infrastructure.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Shared.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Shared.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Domain.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Infrastructure.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\bin\Debug\net5.0\ECommerce.Order.Domain.Core.pdb
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\Order\ECommerce.Order.Application\obj\Debug\net5.0\ECommerce.Order.Application.csproj.CopyComplete

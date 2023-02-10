@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "ECommerce.Order.Domain/1.0.0": {
+        "dependencies": {
+          "ECommerce.Order.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "ECommerce.Order.Domain.dll": {}
+        }
+      },
+      "ECommerce.Order.Domain.Core/1.0.0": {
+        "runtime": {
+          "ECommerce.Order.Domain.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ECommerce.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ECommerce.Order.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
