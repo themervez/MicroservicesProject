@@ -26,6 +26,7 @@ namespace ECommerce.IdentityServer
               new ApiResource("Resource_Basket")     {Scopes={ "Basket_FullPermission" }},
               new ApiResource("Resource_FakePayment"){Scopes={ "FakePayment_FullPermission" }},
               new ApiResource("Resource_PhotoStock"){Scopes={ "PhotoStock_FullPermission" }},
+              new ApiResource("Resource_Gateways")   {Scopes={ "GateWay_FullPermission" }},
               new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
            };
 
@@ -38,6 +39,7 @@ namespace ECommerce.IdentityServer
                new ApiScope("Basket_FullPermission","Basket API için tam yetkili erişim"),
                new ApiScope("FakePayment_FullPermission","FakePayment API için tam yetkili erişim"),
                new ApiScope("PhotoStock_FullPermission","PhotoStock API için tam yetkili erişim"),
+               new ApiScope("Gateways_FullPermission","Gateways için tam yetkili erişim"),
                new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -60,6 +62,7 @@ namespace ECommerce.IdentityServer
                                       "Basket_FullPermission",
                                       //"FakePayment_FullPermission",
                                       "PhotoStock_FullPermission",
+                                      "Gateways_FullPermission",
                                        IdentityServerConstants.LocalApi.ScopeName
                                      }
                 },
@@ -82,7 +85,7 @@ namespace ECommerce.IdentityServer
 
                     AllowOfflineAccess = true,
 
-                    AllowedScopes = { "Catalog_FullPermission", "Basket_FullPermission", "Discount_FullPermission", "Order_FullPermission","FakePayment_FullPermission",
+                    AllowedScopes = { "Catalog_FullPermission", "Basket_FullPermission", "Discount_FullPermission", "Order_FullPermission","FakePayment_FullPermission","Gateways_FullPermission",
                         IdentityServerConstants.StandardScopes.Email, IdentityServerConstants.StandardScopes.OpenId, IdentityServerConstants.StandardScopes.Profile, IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName }
                 },
             };

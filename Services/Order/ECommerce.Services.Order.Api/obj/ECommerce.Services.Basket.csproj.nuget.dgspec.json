@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Services.Basket\\ECommerce.Services.Basket.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Services.Basket\\ECommerce.Services.Basket.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Services.Basket\\ECommerce.Services.Basket.csproj",
+        "projectName": "ECommerce.Services.Order.Api",
+        "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Services.Basket\\ECommerce.Services.Basket.csproj",
+        "packagesPath": "C:\\Users\\Merve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Order\\ECommerce.Services.Order.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Order.Application\\ECommerce.Order.Application.csproj": {
+                "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Order.Application\\ECommerce.Order.Application.csproj"
+              },
+              "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Order.Infrastructure\\ECommerce.Order.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Services\\Basket\\ECommerce.Order.Infrastructure\\ECommerce.Order.Infrastructure.csproj"
+              },
+              "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj": {
+                "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.90, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj",
+        "projectName": "ECommerce.IdentityServer",
+        "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj",
+        "packagesPath": "C:\\Users\\Merve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\IdentityServer\\ECommerce.IdentityServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Merve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj": {
+                "projectPath": "C:\\Users\\Merve\\Desktop\\AKBANK EGITIM SERUVENIM\\Ders Projeler\\MicroservicesProject\\Shared\\ECommerce.Shared\\ECommerce.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

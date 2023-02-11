@@ -53,7 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services.PhotoSto
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{02550CFD-5D6F-4B6A-8AB3-D405C28D8240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Gateways", "Gateways\ECommerce.Gateways\ECommerce.Gateways.csproj", "{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Gateways", "Gateways\ECommerce.Gateways\ECommerce.Gateways.csproj", "{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{8F197E21-AB96-4096-823C-A72634F05E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Web", "Frontends\ECommerce.Web\ECommerce.Web.csproj", "{A33F8FFD-8F37-4B79-A74D-9DD91101353F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +117,10 @@ Global
 		{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33F8FFD-8F37-4B79-A74D-9DD91101353F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33F8FFD-8F37-4B79-A74D-9DD91101353F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33F8FFD-8F37-4B79-A74D-9DD91101353F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33F8FFD-8F37-4B79-A74D-9DD91101353F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +145,7 @@ Global
 		{F1104B91-D832-480D-85E3-B86439968961} = {84FFF55B-9497-49CC-B672-91C8D85E053A}
 		{72560E7D-0F45-4C2E-8EAD-9D4E0DAFD803} = {F1104B91-D832-480D-85E3-B86439968961}
 		{557D04CF-C7CD-401C-B0A7-24CD3A2BCE55} = {02550CFD-5D6F-4B6A-8AB3-D405C28D8240}
+		{A33F8FFD-8F37-4B79-A74D-9DD91101353F} = {8F197E21-AB96-4096-823C-A72634F05E96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FD8ECB6-55D3-438E-AD1D-2E0EACF37CAF}
