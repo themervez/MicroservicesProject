@@ -31,3 +31,15 @@ C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProjec
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\obj\Debug\net5.0\ECommerce.Services.FakePayment.pdb
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\obj\Debug\net5.0\ECommerce.Services.FakePayment.genruntimeconfig.cache
 C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\obj\Debug\net5.0\ref\ECommerce.Services.FakePayment.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\ECommerce.Shared.dll
+C:\Users\Merve\Desktop\AKBANK EGITIM SERUVENIM\Ders Projeler\MicroservicesProject\Services\FakePayment\ECommerce.Services.FakePayment\bin\Debug\net5.0\ECommerce.Shared.pdb

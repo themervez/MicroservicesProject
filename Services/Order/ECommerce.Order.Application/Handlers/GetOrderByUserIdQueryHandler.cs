@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.Internal.Mappers;
 using ECommerce.Order.Application.DTOs;
+using ECommerce.Order.Application.Mapping;
 using ECommerce.Order.Application.Queries;
 using ECommerce.Order.Infrastructure;
 using ECommerce.Shared.DTOs;
@@ -18,7 +19,6 @@ namespace ECommerce.Order.Application.Handlers
     public class GetOrderByUserIdQueryHandler : IRequestHandler<GetOrdersByUserIdQuery, ResponseDto<List<OrderDto>>>
     {
         private readonly OrderDbContext _orderDbContext;
-        private readonly IMapper _mapper;
 
         public GetOrderByUserIdQueryHandler(OrderDbContext orderDbContext)
         {
@@ -29,8 +29,14 @@ namespace ECommerce.Order.Application.Handlers
         {
             var orders = await _orderDbContext.Orders.Include(x => x.orderItems).Where(x => x.BuyerId == request.UserId).ToListAsync();
 
-                return ResponseDto<List<OrderDto>>.Success(_mapper.Map<List<OrderDto>>(orders), 200);
-            //Mapping here
+            if (!orders.Any())
+            {
+                return ResponseDto<List<OrderDto>>.Success(new List<OrderDto>(), 200);
+            }
+
+            var ordersDto = ObjectMapper.Mapper.Map<List<OrderDto>>(orders);
+
+            return ResponseDto<List<OrderDto>>.Success(ordersDto, 200);
         }
     }
 }
