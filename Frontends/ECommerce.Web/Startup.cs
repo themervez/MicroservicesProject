@@ -1,3 +1,7 @@
+using ECommerce.Shared.Services;
+using ECommerce.Web.Models;
+using ECommerce.Web.Services.Abstract;
+using ECommerce.Web.Services.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +26,15 @@ namespace ECommerce.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
+            services.Configure<ClientSettings>(Configuration.GetSection("ClientSettings"));
+            var servicesApiSettings = Configuration.GetSection("ServicesApiSettings").Get<ServicesApiSettings>();
+            services.Configure<ServicesApiSettings>(Configuration.GetSection("ServicesApiSettings"));
+            services.AddHttpContextAccessor();
+            services.AddScoped<ISharedIdentityService, SharedIdentityService>();
+            services.AddHttpClient<ICategoryService, CategoryService>(opt => {
+                opt.BaseAddress = new Uri($"{servicesApiSettings.GatewayBaseUrl}/{servicesApiSettings.Catalog.Path}");
+            });
             services.AddControllersWithViews();
         }
 
